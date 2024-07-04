@@ -1,5 +1,9 @@
+import Tech from '@/components/Tech';
+import Travel from '@/components/Travel';
+import Other from '@/components/Other';
 import Sidebar from '@/components/Sidebar';
 import Subscribe from '@/components/Subscribe';
+
 import { prisma } from '@/app/api/client';
 import { Post } from '@prisma/client';
 
@@ -19,8 +23,12 @@ const getPosts =  async () => {
   return formattedPosts;
 }
 
-export default function Home() {
+export default async function Home() {
+  const posts = await getPosts();
 
+  const formatPosts = () => {
+    
+  }
 
   return (
     <main className="px-10 leading-7">
