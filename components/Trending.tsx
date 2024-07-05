@@ -2,13 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Post } from '@prisma/client';
+
 type TrendingCardProps = {
     className?: string;
     post: any;
 }
 
 
-const TrendingCard = ({ post }) => {
+const TrendingCard = ({ className, post }: TrendingCardProps) => {
     return (
         <Link
         className={`${className} sm:mt-0 sm:h-auto relative mt-7 block w-full h-96 hover:opacity-70`}
@@ -43,7 +45,7 @@ type Props = {
 };
 
 
-const Trending = () => {
+const Trending = ({ trendingPosts }: Props) => {
   return (
     <section className="pt-3 pb-10">
     <div className="flex items-center gap-3">
