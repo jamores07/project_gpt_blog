@@ -37,7 +37,7 @@ const Sidebar = (props: Props) => {
         />
       </div>
       <h4 className="py-3 px-5 text-wh-500 font-bold text-center">
-        Geoffrey Epstein
+        Jane Austin
       </h4>
       <p className="text-wh-500 text-center text-sm">
         Sit diam vel lacus tortor molestie amet tincidunt. Amet amet arcu sed
