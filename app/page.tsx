@@ -8,6 +8,8 @@ import Subscribe from '@/components/Subscribe';
 import { prisma } from '@/app/api/client';
 import { Post } from '@prisma/client';
 
+export const revalidate = 60;
+
 const getPosts = async () => {
   const posts = await prisma.post.findMany();
 
